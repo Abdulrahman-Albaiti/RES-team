@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Tasty Bites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div id="toast-container"></div>
+
+    <nav class="navbar">
+        <a href="menu.html">Menu</a>
+        <a href="payment.html">Checkout</a>
+    </nav>
+
+    <main class="content-wrapper">
+        <header class="page-header">
+            <h1>Our Delicious Menu</h1>
+            <p>Fresh ingredients, prepared with passion.</p>
+        </header>
+
+        <section class="menu-section">
+            <h2 class="section-title">Main Meals</h2>
+            <div class="menu-grid">
+                <div class="card meal-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=500" alt="Burger" class="meal-img">
+                    <h3>Classic Burger</h3>
+                    <p class="price">$12.00</p>
+                    <button class="btn-primary" onclick="addToCart('Classic Burger', 12.00)">Add to Cart</button>
+                </div>
+                <div class="card meal-card">
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=500" alt="Pizza" class="meal-img">
+                    <h3>Margherita Pizza</h3>
+                    <p class="price">$15.00</p>
+                    <button class="btn-primary" onclick="addToCart('Margherita Pizza', 15.00)">Add to Cart</button>
+                </div>
+                <div class="card meal-card">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=500" alt="Salad" class="meal-img">
+                    <h3>Garden Salad</h3>
+                    <p class="price">$10.00</p>
+                    <button class="btn-primary" onclick="addToCart('Garden Salad', 10.00)">Add to Cart</button>
+                </div>
+                <div class="card meal-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=500" alt="Tacos" class="meal-img">
+                    <h3>Street Tacos</h3>
+                    <p class="price">$11.50</p>
+                    <button class="btn-primary" onclick="addToCart('Street Tacos', 11.50)">Add to Cart</button>
+                </div>
+                <div class="card meal-card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=500" alt="Bowl" class="meal-img">
+                    <h3>Salmon Bowl</h3>
+                    <p class="price">$18.00</p>
+                    <button class="btn-primary" onclick="addToCart('Salmon Bowl', 18.00)">Add to Cart</button>
+                </div>
+                <div class="card meal-card">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=500" alt="Steak" class="meal-img">
+                    <h3>Grilled Steak</h3>
+                    <p class="price">$24.00</p>
+                    <button class="btn-primary" onclick="addToCart('Grilled Steak', 24.00)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="section-title">Refreshing Drinks</h2>
+            <div class="menu-grid">
+                <div class="card meal-card">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=500" alt="Juice" class="meal-img">
+                    <h3>Fresh Orange Juice</h3>
+                    <p class="price">$5.00</p>
+                    <button class="btn-primary" onclick="addToCart('Orange Juice', 5.00)">Add to Cart</button>
+                </div>
+                <div class="card meal-card">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=500" alt="Cappuccino" class="meal-img">
+                    <h3>Cappuccino</h3>
+                    <p class="price">$4.50</p>
+                    <button class="btn-primary" onclick="addToCart('Cappuccino', 4.50)">Add to Cart</button>
+                </div>
+                <div class="card meal-card">
+                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=80&w=500" alt="Lemonade" class="meal-img">
+                    <h3>Mint Lemonade</h3>
+                    <p class="price">$4.00</p>
+                    <button class="btn-primary" onclick="addToCart('Mint Lemonade', 4.00)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="card cart-summary">
+            <div class="cart-header-flex">
+                <h3>Your Order</h3>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+            </div>
+            
+            <ul id="cart-items-list" class="cart-items-list">
+                <li>Your cart is empty</li>
+            </ul>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 15px;">
+                <p>Items: <span id="cart-count">0</span></p>
+                <button class="btn-primary" onclick="goToPayment()">Proceed to Payment</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Tasty Bites | Created by Our Team</p>
+        <p><a href="#">Contact Support</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
