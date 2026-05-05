@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Maison – Fine Dining Restaurant</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-brand">
+      <span class="brand-icon">🍽️</span>
+      <span class="brand-name">La Maison</span>
+    </div>
+    <nav class="navbar-links" id="navLinks">
+      <!-- Home hidden: we are on this page -->
+      <a href="pages/dashboard.html" class="nav-link">Dashboard</a>
+      <a href="#menu"                class="nav-link">Menu</a>
+      <a href="pages/feedback.html"  class="nav-link">Feedback</a>
+      <a href="pages/feedback.html"  class="nav-link">Reserve</a>
+      <a href="pages/feedback.html"  class="nav-link">Login</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to <span class="highlight">La Maison</span></h1>
+        <p>Experience the art of fine dining — crafted with passion, served with elegance.</p>
+        <div class="hero-buttons">
+          <a href="#menu"                class="btn btn-secondary">View Menu</a>
+          <a href="pages/feedback.html" class="btn btn-outline" style="border-color:#fff;color:#fff;">Reserve a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="about-strip">
+      <p>Nestled in the heart of Cairo, La Maison brings world-class cuisine to your table. Every dish tells a story of quality, tradition, and creativity.</p>
+    </div>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <h2 class="section-title">Our Signature Dishes</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Handpicked favourites from our chef's collection</p>
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <section class="section why-section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="divider"></div>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon">👨‍🍳</div>
+            <h3>Expert Chefs</h3>
+            <p>Our team of award-winning chefs crafts every dish with precision and passion.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">🌿</div>
+            <h3>Fresh Ingredients</h3>
+            <p>We source only the finest local and imported ingredients daily.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">🕯️</div>
+            <h3>Warm Ambiance</h3>
+            <p>A cozy, elegant setting perfect for any occasion.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">⭐</div>
+            <h3>Top Rated</h3>
+            <p>Consistently rated 5 stars by our beloved guests.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Ready for an Unforgettable Meal?</h2>
+      <p>Book your table today and let us take care of the rest.</p>
+      <a href="pages/feedback.html" class="btn btn-secondary">Make a Reservation</a>
+    </section>
+
+    <section class="section hours-section">
+      <div class="container">
+        <h2 class="section-title">Opening Hours</h2>
+        <div class="divider"></div>
+        <table class="hours-table">
+          <tbody id="hoursBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 class="footer-brand">La Maison</h3>
+        <p>A taste of elegance in every dish. Visit us and experience the finest dining in Cairo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="pages/dashboard.html">Dashboard</a></li>
+          <li><a href="pages/feedback.html">Reserve a Table</a></li>
+          <li><a href="pages/feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>123 Gourmet Street, Cairo</li>
+          <li>info@lamaison.com</li>
+          <li>+20 100 000 0000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 La Maison Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

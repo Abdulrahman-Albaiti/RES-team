@@ -1,0 +1,201 @@
+/* =============================================
+   HOMEPAGE STYLES
+   ============================================= */
+
+/* --- Hero --- */
+.hero {
+  background: linear-gradient(rgba(139,0,0,0.72), rgba(80,0,0,0.80)),
+              url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 6rem 1.5rem;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  color: var(--white);
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+
+.hero-content .highlight {
+  color: var(--secondary);
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  color: #f0e0e0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* --- About Strip --- */
+.about-strip {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1.6rem 1.5rem;
+}
+
+.about-strip p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #f5d8d8;
+}
+
+/* --- Menu Highlights --- */
+.menu-section {
+  background: var(--background);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(139,0,0,0.15);
+}
+
+.menu-card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  background: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+}
+
+.menu-card-body {
+  padding: 1rem 1.2rem;
+}
+
+.menu-card-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+  color: var(--primary);
+}
+
+.menu-card-body p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.7rem;
+}
+
+.menu-card-price {
+  font-family: var(--font-nav);
+  font-weight: 600;
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+/* --- Why Us --- */
+.why-section {
+  background: var(--light-gray);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-item {
+  padding: 1.5rem 1rem;
+}
+
+.why-icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.why-item h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.why-item p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* --- Reservation CTA --- */
+.cta-section {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.cta-section h2 {
+  color: var(--white);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-section p {
+  color: #f5d8d8;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Hours --- */
+.hours-section {
+  background: var(--background);
+}
+
+.hours-table {
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hours-table td {
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.hours-table td:last-child {
+  text-align: right;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+}

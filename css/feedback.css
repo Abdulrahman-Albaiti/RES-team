@@ -1,0 +1,198 @@
+/* =============================================
+   FEEDBACK PAGE STYLES
+   ============================================= */
+
+.feedback-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.feedback-page h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.feedback-page .page-intro {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+/* --- Form Card --- */
+.form-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+/* --- Form Groups --- */
+.form-group {
+  margin-bottom: 1.4rem;
+}
+
+.form-group label {
+  display: block;
+  font-family: var(--font-nav);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border: 1.5px solid #ddd;
+  border-radius: 5px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text);
+  background: var(--background);
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* --- Star Rating --- */
+.star-rating {
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+
+.star {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.15s;
+  line-height: 1;
+}
+
+.star.active,
+.star:hover {
+  color: var(--secondary);
+}
+
+/* --- Submit Area --- */
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* --- Validation Messages --- */
+.field-error {
+  color: var(--danger);
+  font-size: 0.78rem;
+  margin-top: 0.3rem;
+  display: none;
+}
+
+.field-error.visible {
+  display: block;
+}
+
+input.invalid,
+select.invalid,
+textarea.invalid {
+  border-color: var(--danger);
+}
+
+/* --- Success Message --- */
+.success-msg {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+}
+
+.success-msg.visible {
+  display: block;
+}
+
+.success-msg .check {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.success-msg h2 {
+  color: var(--success);
+  margin-bottom: 0.5rem;
+}
+
+.success-msg p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Past Reviews --- */
+.reviews-section {
+  margin-top: 3rem;
+}
+
+.review-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--secondary);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.review-name {
+  font-family: var(--font-nav);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+.review-stars {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.review-text {
+  font-size: 0.88rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.review-date {
+  font-size: 0.78rem;
+  color: #bbb;
+}
+
+@media (max-width: 540px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

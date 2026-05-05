@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard – La Maison</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-brand">
+      <span class="brand-icon">🍽️</span>
+      <span class="brand-name">La Maison</span>
+    </div>
+    <nav class="navbar-links" id="navLinks">
+      <a href="../index.html"       class="nav-link">Home</a>
+      <!-- Dashboard hidden: we are on this page -->
+      <a href="../index.html#menu"  class="nav-link">Menu</a>
+      <a href="feedback.html"       class="nav-link">Feedback</a>
+      <a href="feedback.html"       class="nav-link">Reserve</a>
+      <a href="feedback.html"       class="nav-link">Login</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+  </header>
+
+  <main>
+    <div class="dashboard-page">
+
+      <div class="dashboard-header">
+        <h1>Dashboard</h1>
+        <span class="dashboard-date" id="dashDate"></span>
+      </div>
+
+      <div class="stats-grid" id="statsGrid"></div>
+
+      <div class="dashboard-grid">
+        <div class="dash-card">
+          <div class="dash-card-title">Recent Orders</div>
+          <table class="orders-table">
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Item</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="ordersBody"></tbody>
+          </table>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">Popular Items</div>
+          <div class="popular-list" id="popularList"></div>
+        </div>
+      </div>
+
+      <div class="dashboard-bottom">
+        <div class="dash-card">
+          <div class="dash-card-title">Recent Feedback</div>
+          <div class="feedback-list" id="feedbackList"></div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">Today's Reservations</div>
+          <div class="reservation-list" id="reservationList"></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 class="footer-brand">La Maison</h3>
+        <p>A taste of elegance in every dish. Visit us and experience the finest dining in Cairo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="feedback.html">Reserve a Table</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>123 Gourmet Street, Cairo</li>
+          <li>info@lamaison.com</li>
+          <li>+20 100 000 0000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 La Maison Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/global.js"></script>
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

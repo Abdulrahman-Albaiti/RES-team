@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback – La Maison</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/feedback.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-brand">
+      <span class="brand-icon">🍽️</span>
+      <span class="brand-name">La Maison</span>
+    </div>
+    <nav class="navbar-links" id="navLinks">
+      <a href="../index.html"      class="nav-link">Home</a>
+      <a href="dashboard.html"     class="nav-link">Dashboard</a>
+      <a href="../index.html#menu" class="nav-link">Menu</a>
+      <!-- Reserve/Feedback hidden: we are on this page -->
+      <a href="feedback.html"      class="nav-link">Login</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+  </header>
+
+  <main>
+    <div class="feedback-page">
+
+      <h1>Share Your Experience</h1>
+      <p class="page-intro">We value your feedback — it helps us serve you better every time.</p>
+
+      <div class="form-card">
+
+        <div id="feedbackForm">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guestName">Your Name</label>
+              <input type="text" id="guestName" placeholder="e.g. Ahmed Hassan" />
+              <span class="field-error" id="nameError">Please enter your name (at least 2 characters).</span>
+            </div>
+            <div class="form-group">
+              <label for="guestEmail">Email Address</label>
+              <input type="email" id="guestEmail" placeholder="e.g. ahmed@email.com" />
+              <span class="field-error" id="emailError">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="visitType">Type of Visit</label>
+            <select id="visitType">
+              <option value="">-- Select visit type --</option>
+              <option value="dine-in">Dine-In</option>
+              <option value="takeaway">Takeaway</option>
+              <option value="delivery">Delivery</option>
+              <option value="reservation">Reservation</option>
+            </select>
+            <span class="field-error" id="visitError">Please select a visit type.</span>
+          </div>
+
+          <div class="form-group">
+            <label>Your Rating</label>
+            <div class="star-rating" id="starRating">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <input type="hidden" id="ratingValue" />
+            <span class="field-error" id="ratingError">Please select a star rating.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Your Comment</label>
+            <textarea id="comment" placeholder="Tell us about your experience..."></textarea>
+            <span class="field-error" id="commentError">Please write at least 10 characters.</span>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" id="submitBtn">Submit Feedback</button>
+          </div>
+
+        </div>
+
+        <div class="success-msg" id="successMsg">
+          <div class="check">✅</div>
+          <h2>Thank You!</h2>
+          <p>Your feedback has been received. We appreciate you taking the time to share your experience.</p>
+          <button class="btn btn-outline" id="newReviewBtn">Submit Another Review</button>
+        </div>
+
+      </div>
+
+      <div class="reviews-section">
+        <h2 class="section-title" style="text-align:left; font-size:1.3rem; margin-bottom:1rem;">Guest Reviews</h2>
+        <div id="reviewList"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 class="footer-brand">La Maison</h3>
+        <p>A taste of elegance in every dish. Visit us and experience the finest dining in Cairo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="../index.html#menu">Menu</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>123 Gourmet Street, Cairo</li>
+          <li>info@lamaison.com</li>
+          <li>+20 100 000 0000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 La Maison Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/global.js"></script>
+  <script src="../js/feedback.js"></script>
+</body>
+</html>
